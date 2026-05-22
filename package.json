@@ -1,0 +1,36 @@
+{
+  "name": "lumina-next",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "node scripts/run.mjs dev",
+    "build": "node scripts/run.mjs build",
+    "watch": "node scripts/run.mjs watch"
+  },
+  "dependencies": {
+    "gray-matter": "^4.0.3",
+    "gsap": "^3.12.2",
+    "next": "13.4.10",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "remark": "^15.0.1",
+    "remark-html": "^16.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.9",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "autoprefixer": "^10.4.14",
+    "chokidar": "^5.0.0",
+    "concurrently": "^9.2.1",
+    "decap-server": "^3.7.0",
+    "eslint": "^8.57.0",
+    "eslint-config-next": "^13.4.10",
+    "hugo-bin": "^0.149.2",
+    "live-server": "^1.2.2",
+    "postcss": "^8.4.24",
+    "tailwindcss": "^3.4.8",
+    "typescript": "5.1.6",
+    "vitest": "^4.1.7"
+  }
+}

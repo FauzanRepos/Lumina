@@ -1,0 +1,76 @@
+backend:
+  name: github
+  repo: FauzanRepos/Lumina
+  branch: master
+  base_url: https://lumina.consulting
+  auth_endpoint: auth
+
+local_backend: true
+publish_mode: editorial_workflow
+
+site_url: https://lumina.consulting
+display_url: https://lumina.consulting
+media_folder: insight/static/uploads
+public_folder: /insight/uploads
+
+slug:
+  encoding: ascii
+  clean_accents: true
+  sanitize_replacement: "-"
+
+collections:
+  - name: insights
+    label: Insights
+    label_singular: Insight
+    folder: insight/content/articles
+    create: true
+    extension: md
+    slug: "{{slug}}"
+    preview_path: "insight/{{slug}}"
+    summary: "{{title}}"
+    fields:
+      - { label: Title, name: title, widget: string }
+      - { label: Slug, name: slug, widget: string, hint: Must match the public route segment, for example digital-boundaries }
+      - { label: Description, name: description, widget: text }
+      - { label: Label, name: label, widget: string, default: Insights }
+      - label: Format
+        name: format
+        widget: select
+        default: article
+        options:
+          - { label: Article, value: article }
+          - { label: Guide, value: guide }
+          - { label: Question, value: question }
+      - { label: Author, name: author, widget: string }
+      - { label: Author Role, name: authorRole, widget: string }
+      - { label: Category, name: category, widget: string }
+      - { label: Publish Date, name: date, widget: datetime, time_format: false, date_format: YYYY-MM-DD }
+      - { label: Read Time, name: readTime, widget: string, hint: "Example: 6 min read" }
+      - label: Accent
+        name: accent
+        widget: select
+        default: sky
+        options:
+          - { label: Sky, value: sky }
+          - { label: Mint, value: mint }
+          - { label: Peach, value: peach }
+          - { label: Lavender, value: lavender }
+          - { label: Amber, value: amber }
+      - label: Artwork Variant
+        name: artworkVariant
+        widget: select
+        default: wave
+        options:
+          - { label: Wave, value: wave }
+          - { label: Quote, value: quote }
+          - { label: Journal, value: journal }
+      - { label: Intro, name: intro, widget: text }
+      - { label: Highlight Quote, name: highlightQuote, widget: text, required: false }
+      - { label: Highlight Attribution, name: highlightAttribution, widget: string, required: false }
+      - { label: Featured, name: featured, widget: boolean, default: false, required: false }
+      - label: Key Takeaways
+        name: keyTakeaways
+        widget: list
+        required: false
+        field: { label: Takeaway, name: takeaway, widget: string }
+      - { label: Body, name: body, widget: markdown }

@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#__next {
+  height: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-bg font-body text-neutral-900 antialiased;
+  background-image:
+    radial-gradient(circle at 12% 8%, rgba(255, 197, 210, 0.35), transparent 18%),
+    radial-gradient(circle at 90% 12%, rgba(191, 243, 248, 0.85), transparent 20%),
+    linear-gradient(180deg, #ffffff 0%, #f6fbfc 100%);
+}
+
+a {
+  @apply transition-colors duration-150;
+}
+
+* {
+  scrollbar-color: #12b6d8 #e8f5f8;
+}
+
+::selection {
+  background: rgba(18, 182, 216, 0.18);
+}
+
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  @apply outline-none ring-2 ring-primary-300 ring-offset-2 ring-offset-white;
+}
