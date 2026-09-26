@@ -1,0 +1,469 @@
+{
+  "content": [
+    {
+      "id": "olaffiqih-wibowo",
+      "name": "Olaffiqih Wibowo",
+      "fullName": "Olaffiqih Wibowo, M.Psi., Psikolog",
+      "photo": "/content/upload/psychologist-olaffiqih-wibowo.webp",
+      "psikolog": "Psikolog Klinis",
+      "almamater": "Universitas Gadjah Mada",
+      "bio": "Mendampingi profesional muda yang ingin menata ulang ritme kerja, relasi, dan rasa percaya diri.",
+      "bioParagraphs": [
+        "Olaffiqih membantu klien yang sedang menghadapi perubahan besar, tekanan performa, dan kebingungan arah karier dengan proses yang terasa terstruktur namun tetap hangat.",
+        "Ia senang menerjemahkan situasi yang terasa rumit menjadi langkah kecil yang realistis sehingga klien bisa bergerak lagi dengan rasa tenang."
+      ],
+      "tags": [
+        "Depresi",
+        "Karier",
+        "Pendidikan",
+        "Remaja",
+        "Dewasa"
+      ],
+      "sessionTypes": [
+        "Video Call",
+        "In-Person"
+      ],
+      "sessionFee": 350000,
+      "originalFee": 500000,
+      "sessionDuration": 60,
+      "initials": "OW",
+      "accent": "sky",
+      "education": [
+        "Magister Profesi Psikologi Klinis, Universitas Gadjah Mada",
+        "S1 Psikologi, Universitas Diponegoro"
+      ],
+      "licenses": [
+        "STR-2026-1108",
+        "SIP-CLIN-4412"
+      ],
+      "focusAreas": [
+        {
+          "title": "Navigasi Karier",
+          "description": "Menyusun ulang arah profesional dengan keputusan yang lebih jernih dan berani."
+        },
+        {
+          "title": "Regulasi Kecemasan",
+          "description": "Membangun teknik coping yang lembut agar tubuh dan pikiran kembali sinkron."
+        },
+        {
+          "title": "Pendidikan & Performa",
+          "description": "Mengelola ekspektasi, perfeksionisme, dan ritme belajar yang sehat."
+        }
+      ],
+      "availability": {
+        "2026-05-19": [
+          "13:00",
+          "15:00",
+          "18:30"
+        ],
+        "2026-05-20": [
+          "10:00",
+          "13:30",
+          "19:30"
+        ],
+        "2026-05-21": [
+          "09:30",
+          "14:00",
+          "20:30"
+        ]
+      },
+      "featured": true,
+      "featuredOrder": 1
+    },
+    {
+      "id": "ni-made-rai-kistyanti",
+      "name": "Ni Made Rai Kistyanti",
+      "fullName": "Ni Made Rai Kistyanti, M.Psi., Psikolog",
+      "photo": "/content/upload/psychologist-ni-made-rai-kistyanti.webp",
+      "psikolog": "Psikolog Klinis",
+      "almamater": "Universitas Gadjah Mada",
+      "bio": "Fokus pada relasi, komunikasi sehat, dan proses pemulihan yang terasa tidak menggurui.",
+      "bioParagraphs": [
+        "Ni Made mendampingi klien yang sedang mencari ruang aman untuk bicara tentang relasi, kelelahan emosional, dan dinamika keluarga.",
+        "Pendekatannya empatik namun tetap memberi struktur sehingga proses terapi terasa ringan untuk dijalani."
+      ],
+      "tags": [
+        "Pasangan",
+        "Keluarga",
+        "Cemas",
+        "Dewasa"
+      ],
+      "sessionTypes": [
+        "Video Call",
+        "Chat"
+      ],
+      "sessionFee": 275000,
+      "originalFee": 380000,
+      "sessionDuration": 60,
+      "initials": "NK",
+      "accent": "lavender",
+      "education": [
+        "Magister Psikologi Profesi, Universitas Gadjah Mada",
+        "S1 Psikologi, Universitas Udayana"
+      ],
+      "licenses": [
+        "STR-2026-1124",
+        "SIP-FAM-9982"
+      ],
+      "focusAreas": [
+        {
+          "title": "Relasi Pasangan",
+          "description": "Menata ulang cara berkomunikasi dan memperbaiki pola konflik yang berulang."
+        },
+        {
+          "title": "Keluarga",
+          "description": "Mencari format dukungan baru yang lebih sehat untuk rumah dan orang terdekat."
+        },
+        {
+          "title": "Kecemasan Sosial",
+          "description": "Membantu tubuh dan pikiran terasa lebih aman saat berinteraksi dengan dunia sekitar."
+        }
+      ],
+      "availability": {
+        "2026-05-19": [
+          "14:00",
+          "16:30"
+        ],
+        "2026-05-20": [
+          "11:00",
+          "14:30",
+          "20:00"
+        ],
+        "2026-05-22": [
+          "09:00",
+          "18:00",
+          "20:30"
+        ]
+      },
+      "featured": false,
+      "featuredOrder": 0
+    },
+    {
+      "id": "gabriella-pratiwi",
+      "name": "Gabriella Pratiwi",
+      "photo": "/content/upload/psychologist-gabriella-pratiwi.webp",
+      "psikolog": "Psikolog Umum",
+      "almamater": "Universitas Indonesia",
+      "bio": "Membantu klien dewasa muda memahami pola pikir, emosi, dan relasi dengan pendekatan yang terstruktur.",
+      "tags": [
+        "Karier",
+        "Pendidikan",
+        "Remaja",
+        "Dewasa"
+      ],
+      "sessionFee": 250000,
+      "originalFee": 350000,
+      "featured": true,
+      "featuredOrder": 3
+    },
+    {
+      "id": "zahra-asyifa",
+      "name": "Zahra Asyifa",
+      "fullName": "Zahra Asyifa, S.Psi., Psikolog",
+      "photo": "/content/upload/psychologist-zahra-asyifa.webp",
+      "psikolog": "Psikolog Umum",
+      "almamater": "Universitas Indonesia",
+      "bio": "Menghadirkan sesi yang aman untuk remaja hingga dewasa yang sedang mencari arah dan kestabilan emosi.",
+      "bioParagraphs": [
+        "Di dunia yang sering kali menuntut kita untuk menjadi sama, Zahra percaya bahwa kekuatan terbesarmu justru terletak pada karakteristik unik yang kamu miliki. Baginya, tidak ada standar sukses yang harus kamu kejar mati-matian karena setiap individu berhak tumbuh dan bersinar dengan caranya sendiri.",
+        "Zahra hadir sebagai teman berproses bagi kamu (remaja hingga dewasa) yang mungkin sedang merasa lelah dengan ekspektasi, ragu akan arah karier, atau merasa \"tersesat\" dalam transisi kehidupan ini. Ia mendampingimu mengurai benang kusut kecemasan dan hambatan, hingga kamu menemukan kembali kepercayaan diri untuk melangkah di jalur yang paling selaras dengan jati dirimu."
+      ],
+      "tags": [
+        "Karier",
+        "Pendidikan",
+        "Remaja",
+        "Dewasa",
+        "Regulasi Emosi",
+        "Digital Mental Health"
+      ],
+      "sessionTypes": [
+        "Video Call"
+      ],
+      "sessionFee": 250000,
+      "originalFee": 350000,
+      "sessionDuration": 60,
+      "initials": "ZA",
+      "accent": "amber",
+      "education": [
+        "Pendidikan Profesi Psikolog Umum, Universitas Indonesia",
+        "S1 Ilmu Psikologi, Universitas Indonesia"
+      ],
+      "licenses": [
+        "STR20252099-2026-0396",
+        "SILP-B5AAED267B61"
+      ],
+      "focusAreas": [
+        {
+          "title": "Navigasi Karier",
+          "description": "Merancang masa depan yang berakar bukan hanya mengikuti tren, tetapi juga pada potensi dan keunikan yang kamu miliki."
+        },
+        {
+          "title": "Transisi Kehidupan",
+          "description": "Mendampingi dan menjadi ruang aman untuk berbagai masalah hubungan/sosial, regulasi emosi, hambatan belajar, dan lainnya."
+        },
+        {
+          "title": "Human-Centered Digitalization",
+          "description": "Zahra memahami bahwa duniamu hari ini tak lepas dari ruang digital. Ia mengintegrasikan solusi digital yang modern agar setiap sesi terasa lebih fleksibel, inklusif, dan tetap hangat untuk memastikan kesehatan mentalmu tetap terjaga di tengah bisingnya notifikasi dan tuntutan zaman modern ini."
+        }
+      ],
+      "availability": {
+        "2026-05-19": [
+          "13:00",
+          "18:30",
+          "19:30",
+          "20:30"
+        ],
+        "2026-05-21": [
+          "10:00",
+          "13:30",
+          "17:00"
+        ],
+        "2026-05-23": [
+          "09:00",
+          "11:30",
+          "14:00"
+        ]
+      },
+      "featured": true,
+      "featuredOrder": 4
+    },
+    {
+      "id": "nanda-adhiningtyas",
+      "name": "Nanda Adhiningtyas",
+      "fullName": "Nanda Adhiningtyas, M.Psi., Psikolog",
+      "photo": "/content/upload/psychologist-nanda-adhiningtyas.webp",
+      "psikolog": "Psikolog Klinis",
+      "almamater": "Universitas Indonesia",
+      "bio": "Menyediakan sesi yang stabil untuk isu keluarga, parenting, dan dinamika identitas pribadi.",
+      "bioParagraphs": [
+        "Nanda banyak bekerja dengan individu dan keluarga yang membutuhkan ruang untuk mengurai konflik, ekspektasi, dan peran yang berubah.",
+        "Ia mengutamakan bahasa yang sederhana agar klien lebih mudah terhubung dengan apa yang sedang mereka rasakan."
+      ],
+      "tags": [
+        "Keluarga",
+        "Pendidikan",
+        "Parenting",
+        "Dewasa"
+      ],
+      "sessionTypes": [
+        "Video Call",
+        "In-Person"
+      ],
+      "sessionFee": 350000,
+      "originalFee": 500000,
+      "sessionDuration": 60,
+      "initials": "NA",
+      "accent": "peach",
+      "education": [
+        "Magister Psikologi Klinis, Universitas Indonesia",
+        "S1 Psikologi, Universitas Padjadjaran"
+      ],
+      "licenses": [
+        "STR-2026-0901",
+        "SIP-KEL-1459"
+      ],
+      "focusAreas": [
+        {
+          "title": "Peran Keluarga",
+          "description": "Mengurai dinamika rumah yang rumit dengan langkah yang bisa dijalankan sehari-hari."
+        },
+        {
+          "title": "Parenting",
+          "description": "Mendukung orang tua menemukan ritme yang lembut dan konsisten untuk anak maupun dirinya."
+        },
+        {
+          "title": "Penyesuaian Diri",
+          "description": "Menemukan kembali identitas saat hidup terasa berubah terlalu cepat."
+        }
+      ],
+      "availability": {
+        "2026-05-19": [
+          "09:00",
+          "13:30"
+        ],
+        "2026-05-21": [
+          "10:00",
+          "15:30",
+          "18:30"
+        ],
+        "2026-05-23": [
+          "11:30",
+          "14:30"
+        ]
+      },
+      "featured": true,
+      "featuredOrder": 2
+    },
+    {
+      "id": "nurhamidah",
+      "name": "Nurhamidah",
+      "fullName": "Nurhamidah, M.Psi., Psikolog",
+      "photo": "/content/upload/psychologist-nurhamidah.webp",
+      "psikolog": "Psikolog Klinis",
+      "almamater": "Universitas Airlangga",
+      "bio": "Memberi dukungan untuk stres, burnout, dan kebutuhan memulihkan energi secara perlahan.",
+      "bioParagraphs": [
+        "Nurhamidah mendampingi klien yang merasa kelelahan berkepanjangan, sulit fokus, atau merasa kehilangan arah setelah ritme hidup yang intens.",
+        "Ia banyak menggunakan pendekatan yang membantu klien memetakan ulang kapasitas, batas, dan kebutuhan emosionalnya."
+      ],
+      "tags": [
+        "Depresi",
+        "Burnout",
+        "Cemas",
+        "Karier",
+        "Dewasa"
+      ],
+      "sessionTypes": [
+        "Video Call",
+        "Chat",
+        "In-Person"
+      ],
+      "sessionFee": 245000,
+      "originalFee": 340000,
+      "sessionDuration": 60,
+      "initials": "NH",
+      "accent": "mint",
+      "education": [
+        "Magister Psikologi Profesi, Universitas Airlangga",
+        "S1 Psikologi, Universitas Negeri Malang"
+      ],
+      "licenses": [
+        "STR-2026-0873",
+        "SIP-BRN-3811"
+      ],
+      "focusAreas": [
+        {
+          "title": "Burnout Recovery",
+          "description": "Memulihkan energi dengan target yang realistis dan penuh belas kasih."
+        },
+        {
+          "title": "Batas Sehat",
+          "description": "Belajar berkata cukup dan membangun ritme yang tidak terus menguras diri."
+        },
+        {
+          "title": "Karier Berkelanjutan",
+          "description": "Menata cara bekerja agar tetap berkembang tanpa kehilangan ruang hidup."
+        }
+      ],
+      "availability": {
+        "2026-05-20": [
+          "09:30",
+          "12:30",
+          "16:00"
+        ],
+        "2026-05-21": [
+          "11:00",
+          "14:30"
+        ],
+        "2026-05-22": [
+          "10:30",
+          "18:30",
+          "20:30"
+        ]
+      },
+      "featured": false,
+      "featuredOrder": 0
+    },
+    {
+      "id": "naura-thifaldihia",
+      "name": "Naura Thifaldihia",
+      "photo": "/content/upload/psychologist-naura-thifaldhia.webp",
+      "psikolog": "Psikolog Umum",
+      "almamater": "Universitas Indonesia",
+      "bio": "Mendampingi klien dalam memahami tantangan relasi, batas diri, dan keseimbangan personal secara bertahap.",
+      "tags": [
+        "Karier",
+        "Pendidikan",
+        "Remaja",
+        "Dewasa"
+      ],
+      "featured": true,
+      "featuredOrder": 5
+    },
+    {
+      "id": "ardhito-akhnaf",
+      "name": "Ardhito Akhnaf",
+      "photo": "/content/upload/psychologist-ardhito-akhnaf.webp",
+      "psikolog": "Psikolog Umum",
+      "almamater": "Universitas Indonesia",
+      "bio": "Membantu klien mengelola stres, kelelahan psikologis, dan tekanan kerja lewat pendekatan yang praktis.",
+      "tags": [
+        "Karier",
+        "Pendidikan",
+        "Remaja",
+        "Dewasa"
+      ],
+      "featured": true,
+      "featuredOrder": 6
+    },
+    {
+      "id": "ganesha-pradana",
+      "name": "Ganesha Pradana",
+      "fullName": "Ganesha Pradana, M.Psi., Psikolog",
+      "photo": "/content/upload/psychologist-ardhito-akhnaf.webp",
+      "psikolog": "Psikolog Klinis",
+      "almamater": "Universitas Padjadjaran",
+      "bio": "Membantu klien menghadapi perubahan hidup, tekanan akademik, dan kebutuhan membangun kebiasaan baru.",
+      "bioParagraphs": [
+        "Ganesha banyak bekerja dengan mahasiswa dan early professional yang sedang mencari cara untuk tetap bertumbuh tanpa terus-menerus kewalahan.",
+        "Sesi bersamanya cenderung praktis dan reflektif, cocok untuk klien yang ingin bergerak dengan langkah kecil yang konsisten."
+      ],
+      "tags": [
+        "Remaja",
+        "Karier",
+        "Cemas",
+        "Produktivitas"
+      ],
+      "sessionTypes": [
+        "Video Call",
+        "Chat"
+      ],
+      "sessionFee": 235000,
+      "originalFee": 325000,
+      "sessionDuration": 60,
+      "initials": "GP",
+      "accent": "sky",
+      "education": [
+        "Magister Psikologi Klinis, Universitas Padjadjaran",
+        "S1 Psikologi, Universitas Padjadjaran"
+      ],
+      "licenses": [
+        "STR-2026-1188",
+        "SIP-YTH-3381"
+      ],
+      "focusAreas": [
+        {
+          "title": "Tekanan Akademik",
+          "description": "Menata ulang ritme belajar dan ekspektasi agar proses tetap berkelanjutan."
+        },
+        {
+          "title": "Produktivitas Sehat",
+          "description": "Membangun sistem kerja yang efektif tanpa harus terus dalam mode bertahan."
+        },
+        {
+          "title": "Kepercayaan Diri",
+          "description": "Menguatkan suara diri saat menghadapi perubahan dan ketidakpastian."
+        }
+      ],
+      "availability": {
+        "2026-05-20": [
+          "08:30",
+          "11:30",
+          "15:00"
+        ],
+        "2026-05-22": [
+          "10:00",
+          "13:00",
+          "18:00"
+        ],
+        "2026-05-24": [
+          "09:00",
+          "12:00",
+          "14:30"
+        ]
+      },
+      "featured": false,
+      "featuredOrder": 0
+    }
+  ]
+}

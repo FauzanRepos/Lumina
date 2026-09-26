@@ -1,76 +1,514 @@
-backend:
-  name: github
-  repo: FauzanRepos/Lumina
-  branch: master
-  base_url: https://lumina.consulting
-  auth_endpoint: auth
-
 local_backend: true
+
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: public/content/upload
+public_folder: /content/upload
+
 publish_mode: editorial_workflow
 
-site_url: https://lumina.consulting
-display_url: https://lumina.consulting
-media_folder: insight/static/uploads
-public_folder: /insight/uploads
-
-slug:
-  encoding: ascii
-  clean_accents: true
-  sanitize_replacement: "-"
-
 collections:
-  - name: insights
-    label: Insights
-    label_singular: Insight
-    folder: insight/content/articles
+  # ========================================================================
+  # Blog Articles (Markdown)
+  # ========================================================================
+  - name: blog
+    label: Blog
+    label_singular: Article
+    folder: public/content/blog
     create: true
     extension: md
-    slug: "{{slug}}"
-    preview_path: "insight/{{slug}}"
-    summary: "{{title}}"
+    format: yaml-frontmatter
+    frontmatter_delimiter: "---"
+    slug: "{{fields.slug}}"
     fields:
-      - { label: Title, name: title, widget: string }
-      - { label: Slug, name: slug, widget: string, hint: Must match the public route segment, for example digital-boundaries }
-      - { label: Description, name: description, widget: text }
-      - { label: Label, name: label, widget: string, default: Insights }
-      - label: Format
-        name: format
+      - name: title
+        label: Title
+        widget: string
+        required: true
+
+      - name: slug
+        label: Slug
+        widget: string
+        pattern: ['^[a-z0-9-]+$', 'Lowercase letters, numbers, and hyphens only']
+        required: true
+
+      - name: description
+        label: Description (Excerpt)
+        widget: text
+        required: true
+
+      - name: label
+        label: Label
         widget: select
+        options: [Insights]
+        default: Insights
+
+      - name: format
+        label: Format
+        widget: select
+        options: [article]
         default: article
-        options:
-          - { label: Article, value: article }
-          - { label: Guide, value: guide }
-          - { label: Question, value: question }
-      - { label: Author, name: author, widget: string }
-      - { label: Author Role, name: authorRole, widget: string }
-      - { label: Category, name: category, widget: string }
-      - { label: Publish Date, name: date, widget: datetime, time_format: false, date_format: YYYY-MM-DD }
-      - { label: Read Time, name: readTime, widget: string, hint: "Example: 6 min read" }
-      - label: Accent
-        name: accent
+
+      - name: author
+        label: Author
+        widget: string
+        required: true
+
+      - name: authorRole
+        label: Author Role
+        widget: string
+        hint: "e.g., Clinical Psychologist at Lumina"
+
+      - name: category
+        label: Category
+        widget: string
+        hint: "e.g., Digital Wellbeing, Mental Health"
+
+      - name: date
+        label: Publish Date
+        widget: datetime
+        format: "YYYY-MM-DD"
+        date_format: "YYYY-MM-DD"
+        time_format: false
+        required: true
+
+      - name: readTime
+        label: Read Time
+        widget: string
+        hint: "e.g., 6 min read"
+
+      - name: accent
+        label: Accent Color
         widget: select
+        options: [sky, amber, rose, slate, purple, green, blue]
         default: sky
-        options:
-          - { label: Sky, value: sky }
-          - { label: Mint, value: mint }
-          - { label: Peach, value: peach }
-          - { label: Lavender, value: lavender }
-          - { label: Amber, value: amber }
-      - label: Artwork Variant
-        name: artworkVariant
+
+      - name: artworkVariant
+        label: Artwork Variant
         widget: select
+        options: [wave, circle, grid, dots]
         default: wave
-        options:
-          - { label: Wave, value: wave }
-          - { label: Quote, value: quote }
-          - { label: Journal, value: journal }
-      - { label: Intro, name: intro, widget: text }
-      - { label: Highlight Quote, name: highlightQuote, widget: text, required: false }
-      - { label: Highlight Attribution, name: highlightAttribution, widget: string, required: false }
-      - { label: Featured, name: featured, widget: boolean, default: false, required: false }
-      - label: Key Takeaways
-        name: keyTakeaways
-        widget: list
+
+      - name: intro
+        label: Introduction
+        widget: text
+        hint: "Opening paragraph or summary"
+
+      - name: highlightQuote
+        label: Highlight Quote (Optional)
+        widget: text
         required: false
-        field: { label: Takeaway, name: takeaway, widget: string }
-      - { label: Body, name: body, widget: markdown }
+
+      - name: highlightAttribution
+        label: Highlight Quote Attribution (Optional)
+        widget: string
+        required: false
+
+      - name: keyTakeaways
+        label: Key Takeaways
+        widget: list
+        field: { name: takeaway, label: Takeaway, widget: string }
+
+      - name: featured
+        label: Featured Article
+        widget: boolean
+        default: false
+
+      - name: body
+        label: Content
+        widget: markdown
+        required: true
+
+  # ========================================================================
+  # Services Collection
+  # ========================================================================
+  - name: services
+    label: Services
+    files:
+      - name: services_index
+        label: Services
+        file: public/content/site/services.json
+        fields:
+          - name: content
+            label: Service Categories
+            widget: list
+            fields:
+              - name: id
+                label: ID
+                widget: string
+                hint: "Unique identifier for category"
+
+              - name: label
+                label: Category Label
+                widget: string
+
+              - name: note
+                label: Category Note
+                widget: object
+                fields:
+                  - name: title
+                    label: Title
+                    widget: string
+
+                  - name: text
+                    label: Text
+                    widget: text
+
+              - name: items
+                label: Services
+                widget: list
+                fields:
+                  - name: id
+                    label: ID
+                    widget: string
+
+                  - name: label
+                    label: Label (Short)
+                    widget: string
+
+                  - name: title
+                    label: Title
+                    widget: string
+
+                  - name: description
+                    label: Description
+                    widget: text
+
+                  - name: image
+                    label: Image
+                    widget: image
+
+                  - name: highlights
+                    label: Highlights
+                    widget: list
+                    field: { name: highlight, label: Highlight, widget: string }
+
+                  - name: cta
+                    label: Call-to-Action
+                    widget: object
+                    fields:
+                      - name: label
+                        label: Button Label
+                        widget: string
+
+                      - name: target
+                        label: Button Link
+                        widget: string
+
+  # ========================================================================
+  # Testimonials Collection
+  # ========================================================================
+  - name: testimonials
+    label: Testimonials
+    files:
+      - name: testimonials_index
+        label: Testimonials
+        file: public/content/site/testimonials.json
+        fields:
+          - name: content
+            label: Testimonials
+            widget: list
+            fields:
+              - name: id
+                label: ID
+                widget: string
+
+              - name: quote
+                label: Quote
+                widget: text
+                required: true
+
+              - name: author
+                label: Author Name
+                widget: string
+                required: true
+
+              - name: role
+                label: Role / Service
+                widget: string
+                hint: "e.g., Konsultasi Dewasa, Asesmen Karier"
+
+              - name: initials
+                label: Initials
+                widget: string
+                hint: "2-3 letter abbreviation"
+
+              - name: photo
+                label: Photo
+                widget: image
+
+  # ========================================================================
+  # Psychologists Collection
+  # ========================================================================
+  - name: psychologists
+    label: Psychologists
+    files:
+      - name: psychologists_index
+        label: Psychologist Profiles
+        file: public/content/site/psychologists.json
+        fields:
+          - name: content
+            label: Psychologist Profiles
+            widget: list
+            fields:
+              - name: id
+                label: ID
+                widget: string
+
+              - name: name
+                label: Display Name
+                widget: string
+                required: true
+
+              - name: fullName
+                label: Full Name
+                widget: string
+                required: true
+
+              - name: photo
+                label: Profile Photo
+                widget: image
+
+              - name: psikolog
+                label: Title
+                widget: string
+                hint: "e.g., Psikolog Klinis"
+
+              - name: almamater
+                label: Alma Mater
+                widget: string
+
+              - name: bio
+                label: Short Bio
+                widget: text
+
+              - name: bioParagraphs
+                label: Extended Bio
+                widget: list
+                field: { name: paragraph, label: Paragraph, widget: text }
+
+              - name: tags
+                label: Specialties
+                widget: list
+                field: { name: tag, label: Specialty, widget: string }
+                hint: "e.g., Depresi, Karier, Pendidikan"
+
+              - name: sessionTypes
+                label: Session Types
+                widget: list
+                field:
+                  name: type
+                  label: Type
+                  widget: select
+                  options:
+                    - Video Call
+                    - In-Person
+
+              - name: sessionFee
+                label: Session Fee (IDR)
+                widget: number
+
+              - name: originalFee
+                label: Original Fee (IDR)
+                widget: number
+
+              - name: sessionDuration
+                label: Session Duration (minutes)
+                widget: number
+                default: 60
+
+              - name: education
+                label: Education
+                widget: list
+                field: { name: edu, label: Education, widget: string }
+
+              - name: licenses
+                label: Licenses
+                widget: list
+                field: { name: license, label: License, widget: string }
+
+              - name: focusAreas
+                label: Focus Areas
+                widget: list
+                fields:
+                  - name: title
+                    label: Title
+                    widget: string
+
+                  - name: description
+                    label: Description
+                    widget: text
+
+              - name: featured
+                label: Show on Homepage
+                widget: boolean
+                default: false
+                required: false
+
+              - name: featuredOrder
+                label: Homepage Order
+                widget: number
+                default: 0
+                required: false
+
+  # ========================================================================
+  # Questions (FAQ) Collection
+  # ========================================================================
+  - name: questions
+    label: FAQ Questions
+    files:
+      - name: questions_index
+        label: FAQ Questions
+        file: public/content/site/questions.json
+        fields:
+          - name: content
+            label: Questions
+            widget: list
+            fields:
+              - name: step
+                label: Step Number
+                widget: number
+
+              - name: id
+                label: Question ID
+                widget: string
+
+              - name: type
+                label: Question Type
+                widget: select
+                options:
+                  - single_select
+                  - multiple_select
+                  - text
+
+              - name: question
+                label: Question Text
+                widget: string
+                required: true
+
+              - name: answers
+                label: Answer Options
+                widget: list
+                field: { name: answer, label: Answer, widget: string }
+
+              - name: submitLabel
+                label: Submit Button Label (Optional)
+                widget: string
+                required: false
+
+  # ========================================================================
+  # Footer Collection
+  # ========================================================================
+  - name: footer
+    label: Footer
+    files:
+      - name: footer_index
+        label: Footer Content
+        file: public/content/site/footer.json
+        fields:
+          - name: content
+            label: Footer
+            widget: object
+            fields:
+              - name: contacts
+                label: Contact Information
+                widget: list
+                fields:
+                  - name: label
+                    label: Label
+                    widget: string
+
+                  - name: value
+                    label: Value
+                    widget: string
+
+                  - name: href
+                    label: Link (tel:, mailto:, https:, etc)
+                    widget: string
+
+              - name: links
+                label: Social Media Links
+                widget: list
+                fields:
+                  - name: label
+                    label: Label
+                    widget: string
+
+                  - name: value
+                    label: Display Text
+                    widget: string
+
+                  - name: href
+                    label: URL
+                    widget: string
+
+  # ========================================================================
+  # Hero Collection
+  # ========================================================================
+  - name: hero
+    label: Hero Section
+    files:
+      - name: hero_index
+        label: Hero Words
+        file: public/content/site/hero.json
+        fields:
+          - name: content
+            label: Hero Words
+            widget: list
+            fields:
+              - name: id
+                label: ID
+                widget: string
+
+              - name: text
+                label: Word Text
+                widget: string
+                required: true
+
+              - name: color
+                label: Color (Hex)
+                widget: string
+                hint: "e.g., #37B6DF"
+
+              - name: delay
+                label: Animation Delay (ms)
+                widget: number
+                default: 0
+
+              - name: duration
+                label: Animation Duration (ms)
+                widget: number
+                default: 280
+
+  # ========================================================================
+  # Dropdown (Navigation) Collection
+  # ========================================================================
+  - name: dropdown
+    label: Navigation Menu
+    files:
+      - name: dropdown_index
+        label: Dropdown Menu
+        file: public/content/site/dropdown.json
+        fields:
+          - name: content
+            label: Menu Items
+            widget: list
+            fields:
+              - name: id
+                label: ID
+                widget: string
+
+              - name: label
+                label: Label
+                widget: string
+
+              - name: href
+                label: URL
+                widget: string
+
+              - name: description
+                label: Description (Optional)
+                widget: string
+                required: false

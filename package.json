@@ -1,36 +1,41 @@
 {
-  "name": "lumina-next",
+  "name": "lumina-web",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "node scripts/run.mjs dev",
-    "build": "node scripts/run.mjs build",
-    "watch": "node scripts/run.mjs watch"
+    "dev": "node scripts/build-blog-json.mjs && next dev",
+    "dev:cms": "node server.js",
+    "dev:all": "concurrently \"npm run dev\" \"npm run dev:cms\"",
+    "build": "node scripts/build-blog-json.mjs && next build",
+    "images:webp": "node scripts/convert-images-to-webp.mjs",
+    "images:webp:replace": "node scripts/convert-images-to-webp.mjs --replace",
+    "lint": "eslint",
+    "type-check": "tsc --noEmit"
   },
   "dependencies": {
+    "autoprefixer": "^10.4.19",
+    "express": "^4.19.2",
+    "gsap": "^3.15.0",
     "gray-matter": "^4.0.3",
-    "gsap": "^3.12.2",
-    "next": "13.4.10",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "remark": "^15.0.1",
-    "remark-html": "^16.0.1"
+    "markdown-it": "^14.2.0",
+    "netlify-cms-proxy-server": "^1.3.24",
+    "next": "16.2.9",
+    "postcss": "^8.4.38",
+    "react": "19.2.4",
+    "react-dom": "19.2.4",
+    "sqlite3": "^5.1.6",
+    "tailwindcss": "^3.4.19"
   },
   "devDependencies": {
-    "@types/node": "^20.14.9",
-    "@types/react": "^18.3.3",
-    "@types/react-dom": "^18.3.0",
-    "autoprefixer": "^10.4.14",
-    "chokidar": "^5.0.0",
-    "concurrently": "^9.2.1",
-    "decap-server": "^3.7.0",
-    "eslint": "^8.57.0",
-    "eslint-config-next": "^13.4.10",
-    "hugo-bin": "^0.149.2",
-    "live-server": "^1.2.2",
-    "postcss": "^8.4.24",
-    "tailwindcss": "^3.4.8",
-    "typescript": "5.1.6",
-    "vitest": "^4.1.7"
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "concurrently": "^10.0.3",
+    "dotenv": "^17.4.2",
+    "eslint": "^9",
+    "eslint-config-next": "16.2.9",
+    "puppeteer": "^22.12.1",
+    "sharp": "^0.33.5",
+    "typescript": "^5"
   }
 }

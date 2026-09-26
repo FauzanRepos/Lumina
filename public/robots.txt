@@ -1,0 +1,6 @@
+# robots.txt — update the SITE URL if your production domain differs
+User-agent: *
+Allow: /
+
+# Sitemap location — update to your deployed domain when available
+Sitemap: https://luminaconsulting.id/sitemap.xml

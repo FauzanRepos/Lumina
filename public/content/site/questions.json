@@ -1,0 +1,91 @@
+{
+  "content": [
+    {
+      "step": 1,
+      "id": "question_01",
+      "type": "single_select",
+      "question": "Apa yang membawa Anda ke Lumina Consulting hari ini?",
+      "answers": [
+        "Pendidikan",
+        "Keluarga (Anak & Orangtua)",
+        "Pekerjaan & Karier",
+        "Pasangan",
+        "Emosi & Mood",
+        "Lainnya"
+      ]
+    },
+    {
+      "step": 2,
+      "id": "question_02",
+      "type": "single_select",
+      "question": "Tahu Layanan Kami Dari Mana?",
+      "answers": [
+        "Media sosial Lumina Consulting (mis. Instagram, LinkedIn, dll.)",
+        "Website Lumina Consulting",
+        "Dari orang terdekat (teman, rekan kerja, dll.)",
+        "Komunitas",
+        "Iklan di internet",
+        "Lainnya"
+      ],
+      "submitLabel": "Submit"
+    },
+    {
+      "step": 3,
+      "id": "question_03",
+      "type": "multiple_select",
+      "question": "Preferensi Layanan Psikologis",
+      "answers": [
+        "Konsultasi Individu Dewasa",
+        "Asesmen Psikologi/Psikotes",
+        "Konsultasi Keluarga/Anak",
+        "Self-development",
+        "Konsultasi Pasangan",
+        "Tidak Tahu"
+      ]
+    },
+    {
+      "step": 4,
+      "id": "question_04",
+      "type": "single_select",
+      "question": "Apakah Anda pernah melakukan konsultasi psikologi sebelumnya?",
+      "answers": [
+        "Belum pernah",
+        "Pernah, sekali atau dua kali",
+        "Ya, pernah beberapa kali",
+        "Ya, dan sedang dalam proses"
+      ]
+    },
+    {
+      "step": 5,
+      "id": "contact_info",
+      "type": "contact_info",
+      "question": "Tentang Diri Anda",
+      "fields": [
+        {
+          "id": "nama",
+          "label": "Nama Lengkap",
+          "inputType": "text",
+          "required": true
+        },
+        {
+          "id": "email",
+          "label": "Email",
+          "inputType": "email",
+          "required": true
+        },
+        {
+          "id": "whatsapp",
+          "label": "Nomor WhatsApp",
+          "inputType": "tel",
+          "required": true
+        },
+        {
+          "id": "is_adult",
+          "label": "Saya sudah berusia 18 tahun atau lebih",
+          "inputType": "checkbox",
+          "required": true
+        }
+      ]
+    }
+  ]
+}

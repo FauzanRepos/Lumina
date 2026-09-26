@@ -1,0 +1,178 @@
+{
+  "content": [
+    {
+      "id": "konsultasi_psikologi",
+      "label": "Konsultasi Psikologi",
+      "note": {
+        "title": "Terima Kasih Sudah Melangkah",
+        "text": "Kami tahu butuh tekad besar untuk sampai di titik ini. Di sini, langkahmu dihargai dan ceritanya akan selalu aman bersama kami."
+      },
+      "items": [
+        {
+          "id": "individu_dewasa",
+          "label": "Individu Dewasa",
+          "title": "Individu Dewasa",
+          "description": "Temukan ruang aman untuk mengeksplorasi diri dan menghadapi tantangan hidup dengan lebih tenang. Kami mendampingi Anda memproses emosi dan mengatasi hambatan personal melalui percakapan yang mendalam dan solutif, guna mencapai keseimbangan hidup yang lebih baik dan bermakna.",
+          "image": "/content/upload/service-individu-dewasa.webp",
+          "highlights": [
+            "Self Reflection and Development",
+            "Stress and Anxiety Management",
+            "Emotional Healing and Recovery"
+          ],
+          "cta": {
+            "label": "Book Now",
+            "target": "/psychologists"
+          }
+        },
+        {
+          "id": "keluarga",
+          "label": "Keluarga",
+          "title": "Keluarga",
+          "description": "Ciptakan keharmonisan kehidupan keluarga melalui komunikasi yang terbuka antara orang tua dan anak. Kami membantu menjembatani perbedaan generasi serta memberikan edukasi pola asuh yang tepat, agar setiap anggota keluarga merasa didengar, dihargai, dan tumbuh dalam lingkungan yang suportif.",
+          "image": "/content/upload/service-keluarga.webp",
+          "highlights": [
+            "Parenting Methods",
+            "Parent Wellness",
+            "Children Development"
+          ],
+          "cta": {
+            "label": "Book Now",
+            "target": "/psychologists"
+          }
+        },
+        {
+          "id": "pasangan",
+          "label": "Pasangan",
+          "title": "Pasangan",
+          "description": "Bangun kembali komunikasi yang sehat dalam hubungan melalui sesi pendampingan yang membantu pasangan saling memahami, meredakan konflik, dan memperkuat kedekatan emosional.",
+          "image": "/content/upload/service-pasangan.webp",
+          "highlights": [
+            "Communication Reset",
+            "Attachment Awareness",
+            "Conflict Pattern Reframing"
+          ],
+          "cta": {
+            "label": "Book Now",
+            "target": "/psychologists"
+          }
+        },
+        {
+          "id": "psikoterapi",
+          "label": "Psikoterapi",
+          "title": "Psikoterapi",
+          "description": "Pendampingan jangka menengah untuk isu emosional yang membutuhkan proses lebih dalam, terstruktur, dan konsisten agar perubahan yang dibangun lebih bertahan lama.",
+          "image": "/content/upload/service-psikoterapi.webp",
+          "highlights": [
+            "Structured Weekly Sessions",
+            "Goal-Based Treatment Plan",
+            "Progress Reflection Checkpoints"
+          ],
+          "cta": {
+            "label": "Book Now",
+            "target": "/psychologists"
+          }
+        }
+      ]
+    },
+    {
+      "id": "asesmen",
+      "label": "Asesmen",
+      "note": {
+        "title": "Terima Kasih Sudah Melangkah",
+        "text": "Kami tahu butuh tekad besar untuk sampai di titik ini. Di sini, langkahmu dihargai dan ceritanya akan selalu aman bersama kami."
+      },
+      "items": [
+        {
+          "id": "sekolah",
+          "label": "Sekolah",
+          "title": "Sekolah",
+          "description": "Asesmen untuk kebutuhan pendidikan yang membantu memetakan gaya belajar, kekuatan kognitif, dan area dukungan agar strategi belajar menjadi lebih tepat sasaran.",
+          "image": "/content/upload/service-sekolah.webp",
+          "highlights": [
+            "Learning Style and Readiness Mapping",
+            "Academic Potential Assessment",
+            "Parent and School Recommendation"
+          ],
+          "cta": {
+            "label": "Schedule an Audience",
+            "target": "/psychologists"
+          }
+        },
+        {
+          "id": "karier",
+          "label": "Karier",
+          "title": "Karier",
+          "description": "Temukan arah karier yang selaras dengan nilai diri dan kapasitas intelektual Anda. Melalui asesmen yang komprehensif, kami hadir untuk membantu Anda memetakan kekuatan utama serta area pengembangan diri secara bijaksana. Dengan data yang akurat dan kesiapan mental yang matang, setiap langkah profesional yang Anda ambil kini menjadi lebih terarah, penuh keyakinan, dan relevan dengan kebutuhan di masa depan.",
+          "image": "/content/upload/service-karier.webp",
+          "highlights": [
+            "Intellectual Assessment (Tes Inteligensi)",
+            "Interest and Personality Mapping (Tes Minat-Bakat)",
+            "Education and Career Planning (Bimbingan Karier & Pendidikan)"
+          ],
+          "cta": {
+            "label": "Schedule an Audience",
+            "target": "/psychologists"
+          }
+        },
+        {
+          "id": "rekrutmen",
+          "label": "Rekrutmen",
+          "title": "Rekrutmen",
+          "description": "Asesmen rekrutmen untuk membantu organisasi memilih kandidat yang tepat melalui evaluasi kompetensi, potensi, dan kecocokan perilaku kerja.",
+          "image": "/content/upload/service-rekrutmen.webp",
+          "highlights": [
+            "Role Fit and Competency Screening",
+            "Behavioral and Personality Insight",
+            "Hiring Recommendation Summary"
+          ],
+          "cta": {
+            "label": "Schedule an Audience",
+            "target": "/psychologists"
+          }
+        }
+      ]
+    },
+    {
+      "id": "kolaborasi",
+      "label": "Kolaborasi",
+      "note": {
+        "title": "Terima Kasih Sudah Melangkah",
+        "text": "Kami tahu butuh tekad besar untuk sampai di titik ini. Di sini, langkahmu dihargai dan ceritanya akan selalu aman bersama kami."
+      },
+      "items": [
+        {
+          "id": "offline",
+          "label": "Offline",
+          "title": "Offline",
+          "description": "Program kolaborasi tatap muka untuk institusi dan komunitas yang membutuhkan pengalaman belajar psikologi yang lebih langsung, interaktif, dan kontekstual.",
+          "image": "/content/upload/service-offline.webp",
+          "highlights": [
+            "In-Person Interactive Sessions",
+            "Contextual Case Discussions",
+            "Hands-On Group Activities"
+          ],
+          "cta": {
+            "label": "Schedule an Audience",
+            "target": "/psychologists"
+          }
+        },
+        {
+          "id": "online",
+          "label": "Online",
+          "title": "Online",
+          "description": "Dapatkan akses pengetahuan psikologi yang praktis dan mendalam langsung dari ruang ternyaman Anda. Program webinar kami dirancang untuk memfasilitasi pembelajaran interaktif yang inklusif, membantu Anda memahami dinamika kesehatan mental serta pengembangan diri melalui pemaparan para ahli yang kompeten, bijaksana, dan mudah dipahami demi kesehatan mental yang lebih baik.",
+          "image": "/content/upload/service-online.webp",
+          "highlights": [
+            "Applicable and Relevant Topics",
+            "Real-Time Interaction",
+            "Accessible Learning"
+          ],
+          "cta": {
+            "label": "Schedule an Audience",
+            "target": "/psychologists"
+          }
+        }
+      ]
+    }
+  ]
+}

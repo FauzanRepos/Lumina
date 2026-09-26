@@ -1,0 +1,28 @@
+{
+  "content": [
+    {
+      "id": "pemilik-bisnis",
+      "quote": "Layanan konseling yang sangat affordable, psikolognya ramah, dan sangat membantu untuk memahami diri sendiri. Ada banyak hal yang meningkat di hidup saya setelah mengikuti konseling di Lumina.",
+      "author": "Pemilik Bisnis",
+      "role": "Konsultasi Dewasa",
+      "initials": "PB",
+      "photo": "/icon/placeholder.svg"
+    },
+    {
+      "id": "orang-tua-keluarga",
+      "quote": "Saya ibu rumah tangga yang punya 2 anak remaja dan 1 anak yang sebentar lagi akan masuk usia remaja. Saya sangat terbantu dengan layanan dari Lumina Consulting ini. Pelayanan yang diberikan sangat baik, nyaman dan cukup memberikan kepuasan baik kepada saya maupun anak-anak saya. Semua psikolognya baik-baik dan sangat sabar serta jelas dalam memberikan konsultasi. Apa yang tidak saya ketahui atau sempat ragukan tentang kemampuan anak-anak saya. Dalam hal minat dan bakat mereka, akhirnya bisa saya pahami dengan baik. Disini saya belajar bagaimana hubungan orang tua dan anak harus bisa seimbang. Dan tidak memaksakan kemauan saya sebagai orang tua dan lebih menerima setiap keunikan dari anak-anak saya. Terimakasih buat kakak-kakak psikolog yang sudah memberikan banyak arahan dan membuka pikiran anak-anak saya.",
+      "author": "Orang Tua",
+      "role": "Konsultasi Keluarga & Asesmen Karier",
+      "initials": "OT",
+      "photo": "/icon/placeholder.svg"
+    },
+    {
+      "id": "orang-tua-asesmen",
+      "quote": "Berawal dari psikotes sekolah dan kemudian sangat tertarik untuk lanjut konsultasi individu remaja dikarenakan memang kami, sebagai orang tua butuh penjelasan lebih mendalam mengenai perkembangan anak. Pelayanan jasa Lumina Consulting sangat apik memberi ruang dan waktu bagi kami mengupas lebih dalam jadi bisa jelas. Di Lumina, kami bisa bertanya segala hal dan mendapatkan informasi yg ter-update, jadi ada bayangan untuk kedepannya. Hal ini tidak lepas dari manajemen Lumina dalam memberikan pelayanan yang maksimal.",
+      "author": "Orang Tua",
+      "role": "Asesmen Karier",
+      "initials": "OT",
+      "photo": "/icon/placeholder.svg"
+    }
+  ]
+}

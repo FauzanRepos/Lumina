@@ -1,0 +1,104 @@
+{
+  "content": [
+    {
+      "placeholder": "Kategori Kebutuhan",
+      "options": [
+        "Karier",
+        "Pendidikan",
+        "Remaja",
+        "Dewasa",
+        "Regulasi Emosi",
+        "Digital Mental Health",
+        "Produktivitas"
+      ],
+      "default": "Kolaborasi"
+    },
+    {
+      "placeholder": "Tipe Sesi",
+      "options": [
+        "Video Call",
+        "Chat",
+        "In-Person"
+      ],
+      "default": "Kolaborasi"
+    },
+    {
+      "placeholder": "Jadwal Praktik",
+      "options": [
+        "Pagi / Siang",
+        "Malam",
+        "Hari Kerja",
+        "Akhir Pekan"
+      ],
+      "default": "Kolaborasi"
+    },
+    {
+      "placeholder": "Apa keluhanmu?",
+      "options": [
+        "Regulasi Diri",
+        "Self-Development (Kebiasaan, adiks...",
+        "Pendidikan",
+        "Perkembangan",
+        "Pasangan",
+        "Hubungan Sosial (Teman, Rekan Kerj...",
+        "Karier",
+        "Rekrutmen"
+      ],
+      "default": "Regulasi Diri"
+    },
+    {
+      "placeholder": "Jenis Konsultasi",
+      "options": [
+        "Konsultasi Psikologi",
+        "Asesmen",
+        "Kolaborasi"
+      ],
+      "default": "Konsultasi Psikologi"
+    },
+    {
+      "placeholder": "Jenis Asesmen",
+      "options": [
+        "Konsultasi Psikologi",
+        "Asesmen",
+        "Kolaborasi"
+      ],
+      "default": "Asesmen"
+    },
+    {
+      "placeholder": "Jenis Kolaborasi",
+      "options": [
+        "Konsultasi Psikologi",
+        "Asesmen",
+        "Kolaborasi"
+      ],
+      "default": "Kolaborasi"
+    },
+    {
+      "placeholder": "Tipe Konsultasi",
+      "options": [
+        "Individu Dewasa",
+        "Keluarga",
+        "Pasangan",
+        "Psikoterapi"
+      ],
+      "default": "Individu Dewasa"
+    },
+    {
+      "placeholder": "Tipe Psikolog",
+      "options": [
+        "Pendidikan",
+        "Karier",
+        "Rekrutmen"
+      ],
+      "default": "Pendidikan"
+    },
+    {
+      "placeholder": "Tipe Sesi",
+      "options": [
+        "Online",
+        "Offline"
+      ],
+      "default": "Online"
+    }
+  ]
+}

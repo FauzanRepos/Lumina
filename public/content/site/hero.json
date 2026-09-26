@@ -1,0 +1,32 @@
+{
+  "content": [
+    {
+      "id": "word-1",
+      "text": "for you",
+      "color": "#37B6DF",
+      "delay": 0,
+      "duration": 280
+    },
+    {
+      "id": "word-2",
+      "text": "to help",
+      "color": "#45CEAD",
+      "delay": 50,
+      "duration": 280
+    },
+    {
+      "id": "word-3",
+      "text": "to give",
+      "color": "#FFB571",
+      "delay": 80,
+      "duration": 320
+    },
+    {
+      "id": "word-4",
+      "text": "to care",
+      "color": "#F0567A",
+      "delay": 100,
+      "duration": 280
+    }
+  ]
+}

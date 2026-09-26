@@ -1,0 +1,38 @@
+{
+  "content": {
+    "contacts": [
+      {
+        "label": "Phone Number",
+        "value": "+62 858 1118 060",
+        "href": "tel:+6285811180606"
+      },
+      {
+        "label": "Perusahaan",
+        "value": "+62 858 1117 0606",
+        "href": "tel:+6285811170606"
+      },
+      {
+        "label": "Email",
+        "value": "halo@luminaconsulting.id",
+        "href": "mailto:halo@luminaconsulting.id"
+      }
+    ],
+    "links": [
+      {
+        "label": "LinkedIn",
+        "value": "LinkedIn",
+        "href": "https://id.linkedin.com/company/luminaconsulting"
+      },
+      {
+        "label": "Instagram",
+        "value": "Instagram",
+        "href": "https://www.instagram.com/luminaconsulting.id/"
+      },
+      {
+        "label": "TikTok",
+        "value": "TikTok",
+        "href": "https://www.tiktok.com/@luminaconsulting.id"
+      }
+    ]
+  }
+}
